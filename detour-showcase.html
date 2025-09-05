@@ -1,0 +1,351 @@
+<!DOCTYPE HTML>
+<!--
+	Forty by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Detour App Showcase - Shiv Gandhi</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<style>
+			/* Mobile responsive adjustments */
+			@media screen and (max-width: 768px) {
+				body {
+					overflow-x: auto;
+					overflow-y: scroll;
+				}
+				
+				#wrapper {
+					overflow-x: auto;
+					overflow-y: visible;
+				}
+				
+				/* Make the inspiration grid horizontally scrollable */
+				.inspiration-grid {
+					display: flex !important;
+					flex-direction: row !important;
+					overflow-x: auto !important;
+					overflow-y: hidden !important;
+					gap: 1.5rem !important;
+					padding: 0 1rem !important;
+					-webkit-overflow-scrolling: touch;
+					scrollbar-width: thin;
+				}
+				
+				.inspiration-grid > div {
+					flex-shrink: 0 !important;
+					min-width: 120px !important;
+				}
+				
+				/* Make the app screenshots horizontally scrollable */
+				.image {
+					overflow-x: auto !important;
+					overflow-y: hidden !important;
+					-webkit-overflow-scrolling: touch;
+					scrollbar-width: thin;
+					padding: 0 2rem !important;
+					flex-wrap: nowrap !important;
+					scroll-snap-type: x mandatory;
+				}
+				
+				.image img {
+					flex-shrink: 0 !important;
+					min-width: 200px !important;
+					scroll-snap-align: center;
+					scroll-snap-stop: always;
+					margin: 0 1rem !important;
+				}
+				
+				/* Hide scrollbar on webkit browsers */
+				.inspiration-grid::-webkit-scrollbar {
+					height: 4px;
+				}
+				
+				.inspiration-grid::-webkit-scrollbar-track {
+					background: #f1f1f1;
+					border-radius: 2px;
+				}
+				
+				.inspiration-grid::-webkit-scrollbar-thumb {
+					background: #888;
+					border-radius: 2px;
+				}
+				
+				.inspiration-grid::-webkit-scrollbar-thumb:hover {
+					background: #555;
+				}
+			}
+		</style>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header" class="alt">
+						<a href="index.html" class="logo"><strong>Shiv Gandhi</strong> <span>Portfolio</span></a>
+						<nav>
+							<a href="#menu">Menu</a>
+						</nav>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<ul class="links">
+							<li><a href="index.html">Home</a></li>
+							<li><a href="cv-experience.html">CV & Experience</a></li>
+							<li><a href="detour-project.html">Detour Project</a></li>
+							<li><a href="detour-design.html">Detour Design</a></li>
+							<li><a href="detour-showcase.html">Detour Showcase</a></li>
+						</ul>
+						<ul class="actions stacked">
+							<li><a href="assets/Shiv_Gandhi_CV.pdf" class="button primary fit" download="Shiv_Gandhi_CV.pdf" target="_blank">Download Resume</a></li>
+						</ul>
+					</nav>
+
+				<!-- Banner -->
+				<!-- Note: The "styleN" class below should match that of the header element. -->
+					<section id="banner" class="style2">
+						<div class="inner">
+							<span class="image">
+								<img src="images/pic07.jpg" alt="" />
+							</span>
+							<header class="major">
+								<h1>Detour App Showcase</h1>
+							</header>
+							<div class="content">
+								<p>React Native iOS App with Supabase Backend<br />
+								Published to the App Store</p>
+							</div>
+						</div>
+					</section>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- One -->
+
+                        <section id="one">
+                            <div class="inner">
+                                <header class="major">
+                                    <h2>Inspiration</h2>
+                                </header>
+                                <p>The idea for Detour was to combine the best elements of existing popular apps to create something unique. Taking inspiration from these leading platforms:</p>
+                                
+                                <div class="inspiration-grid" style="display: grid; grid-template-columns: repeat(5, 1fr); gap: 1.5rem; margin: 2rem 0; text-align: center;">
+                                    <div>
+                                        <div style="width: 80px; height: 80px; background: #fff; border-radius: 20px; margin: 0 auto 1rem; display: flex; align-items: center; justify-content: center; padding: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+                                            <img src="images/company_logo/snapchat.png" alt="Snapchat Logo" style="width: 100%; height: 100%; object-fit: contain;" />
+                                        </div>
+                                        <h4>Snapchat</h4>
+                                        <p style="font-size: 0.9rem; color: #666;">Ephemeral sharing</p>
+                                    </div>
+                                    <div>
+                                        <div style="width: 80px; height: 80px; background: #fff; border-radius: 20px; margin: 0 auto 1rem; display: flex; align-items: center; justify-content: center; padding: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+                                            <img src="images/company_logo/google_maps.png" alt="Google Maps Logo" style="width: 100%; height: 100%; object-fit: contain;" />
+                                        </div>
+                                        <h4>Google Maps</h4>
+                                        <p style="font-size: 0.9rem; color: #666;">Location discovery</p>
+                                    </div>
+                                    <div>
+                                        <div style="width: 80px; height: 80px; background: #fff; border-radius: 20px; margin: 0 auto 1rem; display: flex; align-items: center; justify-content: center; padding: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+                                            <img src="images/company_logo/bereal.png" alt="BeReal Logo" style="width: 100%; height: 100%; object-fit: contain;" />
+                                        </div>
+                                        <h4>BeReal</h4>
+                                        <p style="font-size: 0.9rem; color: #666;">Authentic moments</p>
+                                    </div>
+                                    <div>
+                                        <div style="width: 80px; height: 80px; background: #fff; border-radius: 20px; margin: 0 auto 1rem; display: flex; align-items: center; justify-content: center; padding: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+                                            <img src="images/company_logo/instagram.png" alt="Instagram Logo" style="width: 100%; height: 100%; object-fit: contain;" />
+                                        </div>
+                                        <h4>Instagram</h4>
+                                        <p style="font-size: 0.9rem; color: #666;">Visual storytelling</p>
+                                    </div>
+                                    <div>
+                                        <div style="width: 80px; height: 80px; background: #fff; border-radius: 20px; margin: 0 auto 1rem; display: flex; align-items: center; justify-content: center; padding: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+                                            <img src="images/company_logo/spotify.png" alt="Spotify Logo" style="width: 100%; height: 100%; object-fit: contain;" />
+                                        </div>
+                                        <h4>Spotify</h4>
+                                        <p style="font-size: 0.9rem; color: #666;">UI inspiration</p>
+                                    </div>
+                                </div>
+                                
+                                <p>Detour focuses on sharing the location of cool places you've been with friends. The app creates a social map where users can discover hidden gems, share authentic experiences, and connect with friends through location-based content. The user interface draws inspiration from Spotify's clean, intuitive design and smooth user experience.</p>
+                            </div>
+                        </section>
+
+							<section id="one">
+								<div class="inner">
+									<header class="major">
+										<h2>App Screenshots</h2>
+									</header>
+									<p>Explore the Detour app through these key screenshots showcasing the user interface and functionality.</p>
+								</div>
+							</section>
+
+						<!-- Two -->
+							<section id="two" class="spotlights">
+								<section>
+                                <div class="inspiration-grid"
+                                    style="display: grid; grid-template-columns: repeat(5, 1fr); gap: 1.5rem; margin: 2rem 0; text-align: center;">
+										<img src="images/detour_screenshots/home-portrait.png" alt="Detour Home Screen" data-position="center center" style="max-width: 250px; height: auto;" />
+										<img src="images/detour_screenshots/more-modal-portrait.png" alt="Detour More Modal" data-position="center center" style="max-width: 250px; height: auto;" />
+									</div>
+									<div class="content">
+										<div class="inner">
+											<header class="major">
+												<h3>Home Screen</h3>
+											</header>
+											<p>The main dashboard showing personalized content, location-based posts, and quick access to key features. Users can filter posts by categories (cafes, activities, events, etc.) to discover exactly what they're looking for. Clean, intuitive design with smooth navigation.</p>
+											
+										</div>
+									</div>
+								</section>
+								<section>
+                                            <div class="inspiration-grid"
+                                                style="display: grid; grid-template-columns: repeat(5, 1fr); gap: 1.5rem; margin: 2rem 0; text-align: center;">
+                                                
+                                                <img src="images/detour_screenshots/explore.png" alt="Explore Screen"
+                                                    data-position="center center" style="max-width: 250px; height: auto;" />
+                                                <img src="images/detour_screenshots/profile-portrait.png" alt="Profile Screen"
+                                                    data-position="center center" style="max-width: 250px; height: auto;" />
+                                            </div>
+									<div class="content">
+										<div class="inner">
+											<header class="major">
+												<h3>Social Features</h3>
+											</header>
+											<p>Connect with friends, join groups, and share location-based content. Filter posts by categories to find specific types of experiences. Real-time updates and social interactions powered by Supabase.</p>
+									
+										</div>
+									</div>
+								</section>
+								<section>
+                                    <div class="inspiration-grid"
+                                        style="display: grid; grid-template-columns: repeat(5, 1fr); gap: 1.5rem; margin: 2rem 0; text-align: center;">
+										<img src="images/detour_screenshots/beacon_home_screen-portrait.png" alt="Beacon Home Screen" data-position="center center" style="max-width: 250px; height: auto;" />
+                                                                                <img src="images/detour_screenshots/active_beacon-portrait.png" alt="Active Beacon" data-position="center center"
+                                                                                    style="max-width: 250px; height: auto;" />
+
+                                        <img src="images/detour_screenshots/activate_beacon_location-portrait.png" alt="Activate Beacon Location" data-position="center center" style="max-width: 250px; height: auto;" />
+										<img src="images/detour_screenshots/activate_beacon_location_search-portrait.png" alt="Beacon Location Search" data-position="center center" style="max-width: 250px; height: auto;" />
+                                        <img src="images/detour_screenshots/activate_beacon_friends-portrait.png" alt="Beacon Friends Selection" data-position="center center" style="max-width: 250px; height: auto;" />
+									</div>
+									<div class="content">
+										<div class="inner">
+											<header class="major">
+												<h3>Beacons</h3>
+											</header>
+											<p>Beacons is a way to send location based invites for spontaneous meetups to your friends.</p>
+											
+										</div>
+									</div>
+								</section>
+							</section>
+
+						<!-- Three -->
+							<section id="three">
+								<div class="inner">
+									<header class="major">
+										<h2>Key Features & Technologies</h2>
+									</header>
+									<p>Built with modern technologies and best practices for mobile development.</p>
+									<div class="row">
+										<div class="col-6 col-12-small">
+											<h3>Frontend Technologies</h3>
+											<ul>
+												<li>React Native with Expo Framework</li>
+												<li>TypeScript for type safety</li>
+												<li>Native iOS development with Xcode</li>
+												<li>Responsive UI/UX design</li>
+											</ul>
+										</div>
+										<div class="col-6 col-12-small">
+											<h3>Backend & Services</h3>
+											<ul>
+												<li>Supabase PostgreSQL database</li>
+												<li>Supabase Authentication</li>
+												<li>Edge Functions for serverless logic</li>
+												<li>Real-time subscriptions</li>
+											</ul>
+										</div>
+										<div class="col-6 col-12-small">
+											<h3>Core Features</h3>
+											<ul>
+												<li>User authentication & profiles</li>
+												<li>Location-based content discovery</li>
+												<li>Social features (friends, groups)</li>
+												<li>Real-time messaging & updates</li>
+											</ul>
+										</div>
+										<div class="col-6 col-12-small">
+											<h3>Monetization</h3>
+											<ul>
+												<li>Google AdMob integration</li>
+												<li>RevenueCat paywall system</li>
+												<li>In-app purchase support</li>
+												<li>Subscription management</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</section>
+
+						<!-- Four -->
+							<section id="four">
+								<div class="inner">
+									<header class="major">
+										<h2>Development Process</h2>
+									</header>
+									<p>From concept to App Store publication - a comprehensive development journey.</p>
+									<div class="row">
+										<div class="col-4 col-12-medium">
+											<h3>Planning & Design</h3>
+											<p>User research, wireframing, and UI/UX design. Created user personas and mapped user journeys for optimal experience.</p>
+										</div>
+										<div class="col-4 col-12-medium">
+											<h3>Development</h3>
+											<p>Agile development with 4-person team. Regular sprints, code reviews, and continuous integration for quality assurance.</p>
+										</div>
+										<div class="col-4 col-12-medium">
+											<h3>Launch & Iteration</h3>
+											<p>App Store submission, user feedback collection, and iterative improvements based on real user data and analytics.</p>
+										</div>
+									</div>
+								</div>
+							</section>
+
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<div class="inner">
+							<ul class="icons">
+								<li><a href="https://github.com/shivgandhi" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+								<li><a href="https://linkedin.com/in/shiv-gandhi" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+								<li><a href="mailto:shivgandhi29@outlook.co.nz" class="icon solid alt fa-envelope"><span class="label">Email</span></a></li>
+							</ul>
+							<ul class="copyright">
+								<li>&copy; 2025 Shiv Gandhi</li>
+							</ul>
+						</div>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
